@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #p{
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 微软雅黑;
+            color: black;
+        }
+        .username{
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+
+            border-radius: 3px;
+            border-color: #5FB878
+        ;
+            width:150px;
+            height: 30px;
+        }
+        #div{
+           margin: 0 auto;
+            margin-left: 33%;
+            width:400px;
+            height:100%; border:1px
+        }
+    </style>
+    <title>登录页面</title>
+</head>
+<body>
+<p id="p">管理员登录</p><br>
+
+
+<div id="div">
+    <form id="form">
+        <table>
+            <tr>
+                <td> 用户名：</td>
+                <td colspan="2"> <input type="text" class="username" name="username" placeholder="请输入用户名"></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> 密&nbsp码：</td>
+                <td colspan="2"> <input type="password" class="username" name="username" placeholder="请输入用户名"></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> 验证码：</td>
+                <td> <input type="text" class="username" name="checkcode" placeholder="请输入验证码"></td>
+
+                <td> <a href="/checkCodeServlet">看不清？刷新一下</a></td>
+
+            </tr>
+            <tr>
+                <td colspan="3" > <input type="submit"   value="登录" style="width: 80px ;height: 30px;margin-left: 30%"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
